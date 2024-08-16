@@ -1,4 +1,10 @@
 import numpy as np
+from matplotlib import pyplot as plt
+import sympy as sym
 
-my_array = np.array([0, 1, 2, 3, 4])
-print(my_array)
+def f(x):
+    return np.sin(x)
+x = np.linspace(1, 10, 50)
+
+plt.plot(x, f(x))
+plt.show()
